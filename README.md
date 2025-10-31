@@ -25,7 +25,7 @@ Apresentamos o **Circuito Terê Verde**, um projeto...
 
 ## Visão Geral
 
-O projeto **NAFESO** surgiu com o objetivo de facilitar o acesso aos serviços do NAF, como suporte para declarações de Imposto de Renda e orientações fiscais. Nosso objetivo é oferecer uma plataforma intuitiva e moderna que simplifique o processo de agendamento e otimize a gestão de atendimentos, beneficiando a população local.
+O projeto **Circuito Terê Verde** tem como objetivo facilitar o acesso às informações sobre os parques e áreas de ecoturismo de Teresópolis. Por meio de uma plataforma moderna, os visitantes poderão consultar trilhas, cachoeiras, pontos de observação, biodiversidade local e eventos sazonais.
 
 ## O Desafio
 
