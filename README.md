@@ -1,7 +1,7 @@
 # ![Circuito Terê Verde]
 
 # Grupo 10
-Rafael Mendes, Igor Augusto, Nauan, Ingrid Mendes
+Rafael Mendes, Igor Augusto, Nauan Pereira, Ingrid Mendes
 
 # Situação Problema: 
 Facilitar acessar informações sobre o Parque Nacional da Serra dos Órgãos, o Parque Estadual dos Três Picos e o Parque Natural Municipal Montanhas de Teresópolis.
