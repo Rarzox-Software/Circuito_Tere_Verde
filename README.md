@@ -4,9 +4,9 @@
 Rafael Mendes, Igor Augusto, Nauan Pereira, Ingrid Mendes
 
 # Situação Problema: 
-Facilitar acessar informações sobre o Parque Nacional da Serra dos Órgãos, o Parque Estadual dos Três Picos e o Parque Natural Municipal Montanhas de Teresópolis.
+Facilitar o acesso a informações sobre o Parque Nacional da Serra dos Órgãos, o Parque Estadual dos Três Picos e o Parque Natural Municipal Montanhas de Teresópolis, reunindo em uma única plataforma dados sobre trilhas, cachoeiras, atividades de ecoturismo e a conscientização ambiental na região.
 
-Apresentamos o **Circuito Terê Verde**, um projeto...
+Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover o ecoturismo e tornar mais simples a descoberta das belezas naturais e das trilhas da região.
 
 ## Índice
 - [Visão Geral](#visão-geral)
