@@ -9,14 +9,10 @@ Facilitar o acesso a informações sobre o Parque Nacional da Serra dos Órgãos
 Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover o ecoturismo e tornar mais simples a descoberta das belezas naturais e das trilhas da região.
 
 ## Índice
-- [Visão Geral](#visão-geral)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [MVP](#MVP)
-- [Funcionalidades](#funcionalidades)
 - [Dores do público alvo](#dores-do-público-alvo)
 - [Público Alvo](#público-alvo)
-- [Objetivos](#objetivos)
-- [Benefícios](#benefícios)
 - [Protótipos](#protótipos)
 - [Lista de Requisitos](#lista-de-requisitos)
 - [Slide de Apresentação](#slide-de-apresentação)
@@ -27,13 +23,13 @@ Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover 
 ## MVP
 O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funcional que centraliza informações essenciais sobre as atrações naturais de Teresópolis, focando nas trilhas, cachoeiras e biodiversidade das unidades de conservação. Seu objetivo é orientar turistas e moradores locais de forma prática e consciente, oferecendo dados atualizados em uma interface moderna e de fácil acesso.
 
-Funcionalidades principais:
+**Funcionalidades principais**:
 -**Página de Informações sobre Parques**: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
 -**Informações sobre biodiversidade**: Dados básicos sobre fauna e flora das unidades de conservação.
 -**Agenda de eventos**: Calendário com atividades programadas nos parques e áreas de ecoturismo. 
 -**Interface responsiva e intuitiva**: Design simples para acesso via celular e computador.
 
-Público-alvo: 
+**Público-alvo**: 
   -*visitantes*: Turistas e moradores interessados em ecoturismo, trilhas e atividades de montanhismo em Teresópolis.
   -*Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
 
