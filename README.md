@@ -9,12 +9,12 @@ Facilitar o acesso a informações sobre o Parque Nacional da Serra dos Órgãos
 Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover o ecoturismo e tornar mais simples a descoberta das belezas naturais e das trilhas da região.
 
 ## Índice
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [O Desafio](#O-Desafio)
 - [MVP](#MVP)
-- [Dores do público alvo](#dores-do-público-alvo)
 - [Público Alvo](#público-alvo)
-- [Protótipos](#protótipos)
-- [Lista de Requisitos](#lista-de-requisitos)
+- [Dores do público alvo](#dores-do-público-alvo)
+- [Funcionalidades principais](#funcionalidades-principais)
+
 - [Slide de Apresentação](#slide-de-apresentação)
 - [Instalação e uso](#instalação-e-uso)
 - [Melhorias Futuras](#Melhorias-futuras)
