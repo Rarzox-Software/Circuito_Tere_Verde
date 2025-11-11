@@ -11,13 +11,11 @@ Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover 
 ## Índice
 - [O Desafio](#O-Desafio)
 - [MVP](#MVP)
+- [Funcionalidades principais](#funcionalidades-principais)
+- [Atores Envolvidos](#Atores-Envolvidos)
 - [Público Alvo](#público-alvo)
 - [Dores do público alvo](#dores-do-público-alvo)
-- [Funcionalidades principais](#funcionalidades-principais)
-
-- [Slide de Apresentação](#slide-de-apresentação)
-- [Instalação e uso](#instalação-e-uso)
-- [Melhorias Futuras](#Melhorias-futuras)
+- [Benefícios](#Benefícios)
 
 
 ## O Desafio
