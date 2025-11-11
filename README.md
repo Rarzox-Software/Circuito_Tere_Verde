@@ -20,38 +20,36 @@ Apresentamos o  **Circuito Terê Verde**, um projeto desenvolvido para promover 
 - [Melhorias Futuras](#Melhorias-futuras)
 
 
-##O Desafio
+## O Desafio
 Desenvolver uma solução digital que centralize informações sobre as unidades de conservação de Teresópolis, permitindo que turistas e visitantes planejem suas visitas de forma eficiente, consciente e segura, valorizando o ecoturismo e a preservação ambiental.
-
 
 ## MVP
 O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funcional que centraliza informações essenciais sobre as atrações naturais de Teresópolis, focando nas trilhas, cachoeiras e biodiversidade das unidades de conservação. Seu objetivo é orientar turistas e moradores locais de forma prática e consciente, oferecendo dados atualizados em uma interface moderna e de fácil acesso.
 
-**Funcionalidades principais**:
--**Página de Informações sobre Parques**: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
--**Informações sobre biodiversidade**: Dados básicos sobre fauna e flora das unidades de conservação.
--**Agenda de eventos**: Calendário com atividades programadas nos parques e áreas de ecoturismo. 
--**Interface responsiva e intuitiva**: Design simples para acesso via celular e computador.
+## Funcionalidades principais:
+- *Página de Informações sobre Parques*: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
+- *Informações sobre biodiversidade*: Dados básicos sobre fauna e flora das unidades de conservação.
+- *Agenda de eventos*: Calendário com atividades programadas nos parques e áreas de ecoturismo. 
+- *Interface responsiva e intuitiva*: Design simples para acesso via celular e computador.
 
-**Público-alvo**: 
-  -*visitantes*: Turistas e moradores interessados em ecoturismo, trilhas e atividades de montanhismo em Teresópolis.
-  -*Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
+## Atores Envolvidos:
+- *Visitantes*: Turistas e moradores que buscam informações sobre trilhas, biodiversidade e eventos.
+- *Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
 
-**Dores do público alvo**:
--*Informações dispersas*: Visitantes encontram dificuldade em localizar informações sobre os parques.
--*Planejamento de visitas*: Sem um calendário centralizado, turistas podem perder eventos ou horários de visitação ideais.
--*Acesso limitado a dados*: Dados sobre trilhas, fauna e flora nem sempre estão disponíveis de forma confiável.
+## Público-alvo: 
+  - *visitantes*: Turistas e moradores interessados em ecoturismo, trilhas e atividades de montanhismo em Teresópolis.
+  - *Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
 
-**Funcionalidades**:
--*Cadastro e Login de Administradores*: Área restrita para atualizar informações.
--*Consulta de Trilhas e Pontos Turísticos*: Detalhes sobre trilhas, cachoeiras, fauna e flora.
--*Agenda de Eventos*: Visualização de eventos, temporadas e atividades especiais.
--*Busca Interativa*: Facilita a localização de informações específicas.
--*Interface Responsiva*: Compatível com dispositivos móveis e desktop.
+## Dores do público alvo:
+- *Informações dispersas*: Visitantes encontram dificuldade em localizar informações sobre os parques.
+- *Planejamento de visitas*: Sem um calendário centralizado, turistas podem perder eventos ou horários de visitação ideais.
+- *Acesso limitado a dados*: Dados sobre trilhas, fauna e flora nem sempre estão disponíveis de forma confiável.
 
-
-
-
+## Benefícios:
+- *Planejamento eficiente de visitas*: Turistas podem se organizar de forma prática.
+- *Informações atualizadas*: Administradores podem atualizar conteúdos em tempo real.
+- *Promoção do ecoturismo*: Divulgação de atrações naturais de forma sustentável.
+- *Acesso remoto e conveniente*: Plataforma disponível em múltiplos dispositivos.
 
 
 
