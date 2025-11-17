@@ -1,4 +1,4 @@
-# ![Circuito Terê Verde]
+<img width="200" height="200" alt="Logo Circuito TereVerde" src="https://github.com/user-attachments/assets/5fa0c270-1786-4aa0-ba73-5ddf8cc3ecb7" />
 
 # Grupo 10
 Rafael Mendes, Igor Augusto, Nauan Pereira, Ingrid Mendes
