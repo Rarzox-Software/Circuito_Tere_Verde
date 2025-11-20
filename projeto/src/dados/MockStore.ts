@@ -34,7 +34,7 @@ export class MockStore {
     private logado: Admin | null = null;
     private postagens: Postagem[] = [];
 
-    private idSequencialPostagens : number = 2;
+    private idSequencialPostagens : number = 3;
     private idSequencialAdmin : number = 2;
 
     private constructor() {
@@ -52,6 +52,16 @@ export class MockStore {
             parque: Parque.PNMMT,
             tipo: TipoPostagem.Novidades,
             titulo: "Trilha Suspença",
+            descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venhão visitar e conecer a natureza.",
+            foto:testeImg,
+            dataPostagem: new Date()
+        });
+
+        this.postagens.push({
+            id: 2,
+            parque: Parque.PNMMT,
+            tipo: TipoPostagem.Novidades,
+            titulo: "Trilha Suspença 2",
             descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venhão visitar e conecer a natureza.",
             foto:testeImg,
             dataPostagem: new Date()
@@ -144,4 +154,23 @@ export class MockStore {
             p => p.parque === parque && p.tipo === tipo
         );
     }
+
+    public getUltimasPostagens(): Postagem[] {
+    const hoje = new Date();
+
+    // Filtra apenas as não expiradas
+    const validas = this.postagens.filter(p => {
+        if (!p.dataFim) return true;            // sem data fim = nunca expira
+        return p.dataFim >= hoje;               // só mantém se ainda não expirou
+    });
+
+    // Ordena da postagem mais recente para a mais antiga
+    validas.sort((a, b) => {
+        return b.dataPostagem.getTime() - a.dataPostagem.getTime();
+    });
+
+    // Retorna apenas as 5 últimas
+    return validas.slice(0, 5);
+}
+
 }

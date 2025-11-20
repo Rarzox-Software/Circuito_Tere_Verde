@@ -174,3 +174,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .btn-acao {
+    @apply px-6 py-2 font-semibold text-white rounded-md shadow 
+           transition-all duration-200 transform active:scale-95;
+  }
+
+  .th {
+    @apply text-left py-3 px-4 text-sm font-semibold;
+  }
+
+  .td {
+    @apply px-4 py-3 text-sm text-gray-700;
+  }
+
+  .linha {
+    @apply border-b border-[#e5e7eb] transition;
+  }
+}

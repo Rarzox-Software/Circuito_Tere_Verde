@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Principal from './paginas/principal';
 import Sobre from './paginas/sobre';
 import Login from './paginas/login';
-import PainelControle from './paginas/painelControle';
+import PainelControle from './paginas/painel-controle/painelControle';
 
 export default function Rotas() {
   return (
