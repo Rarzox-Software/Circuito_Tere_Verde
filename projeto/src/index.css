@@ -5,11 +5,11 @@
 
 :root {
   --background: #DAD7CD;
-  --foreground: oklch(0.3000 0.0358 30.2042);
-  --card: var(--background);
-  --card-foreground: oklch(0.3000 0.0358 30.2042);
+  --foreground: #D9D9D9;
+  --card: var(--foreground);
+  --card-foreground: #D9D9D9;
   --popover: var(--background);
-  --popover-foreground: oklch(0.3000 0.0358 30.2042);
+  --popover-foreground: #D9D9D9;
   --primary: #344E41;
   --primary-foreground: oklch(1.0000 0 0);
   --secondary: #A3B18A;
@@ -36,7 +36,6 @@
   --sidebar-accent-foreground: oklch(0.4254 0.1159 144.3078);
   --sidebar-border: oklch(0.8805 0.0208 74.6428);
   --sidebar-ring: #344E41;
-  --button-selected: #D9D9D9;
   --font-sans: Montserrat, sans-serif;
   --font-serif: Merriweather, serif;
   --font-mono: Source Code Pro, monospace;

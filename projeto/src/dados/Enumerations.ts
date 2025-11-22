@@ -5,12 +5,12 @@ export enum Parque {
 }
 
 export enum TipoPostagem {
-    Trilhas = "Trilhas",
-    Cachoeiras = "Cachoeiras",
-    Biodiversidade = "Biodiversidade",
-    Eventos = "Eventos",
-    Novidades = "Novidades",
-    Atracoes = "Atrações"
+    Trilhas = "TRILHAS",
+    Cachoeiras = "CACHOEIRAS",
+    Biodiversidade = "BIODIVERSIDADE",
+    Eventos = "EVENTOS",
+    Novidades = "NOVIDADES",
+    Atracoes = "ATRAÇÕES"
 }
 
 // Para preencher combobox no front (React/HTML/TS)
