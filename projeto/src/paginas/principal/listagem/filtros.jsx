@@ -1,7 +1,11 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 
-export default function FiltrosListagem() {
+import { MockStore } from "../../../dados/MockStore.ts";
+
+export default function FiltrosListagem({ retornoFiltro }) {
+  const store = MockStore.getInstance(); // acessa dados mocado
+
   const [selected, setSelected] = useState("SOBRE");
 
   const botoes = [
@@ -11,6 +15,10 @@ export default function FiltrosListagem() {
     "CACHOEIRAS",
     "BIODIVERSIDADE"
   ];
+
+  useEffect(() => {
+    retornoFiltro(store.getPostagensPorTipo(selected));
+  }, [selected, retornoFiltro, store]);
 
   return (
     <div className="p-2 rounded-md bg-secondary flex flex-wrap justify-center gap-2">

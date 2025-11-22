@@ -11,14 +11,12 @@ export default function Principal() {
   return (
     <div className="px-2 flex flex-col items-center justify-center gap-5">
       <Carousel />
-      <div className="md:w-3/4 lg:w-3/6 flex justify-between">
+      <div className="w-full md:w-3/4 lg:w-3/6 flex justify-between">
         <BotaoParque logo={<LogoSerraOrgaos />} />
         <BotaoParque logo={<LogoMontanhasTeresopolis />} />
         <BotaoParque logo={<LogoTresPicos />} />
       </div>
-      <div>
-        <Listagem />
-      </div>
+      <Listagem />
     </div>
   )
 }
