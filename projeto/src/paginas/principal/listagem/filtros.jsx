@@ -13,7 +13,7 @@ export default function FiltrosListagem() {
   ];
 
   return (
-    <div className="flex gap-2 bg-secondary p-2 rounded-md">
+    <div className="p-2 rounded-md bg-secondary flex flex-wrap justify-center gap-2">
       {botoes.map(label => (
         <Button
           key={label}
