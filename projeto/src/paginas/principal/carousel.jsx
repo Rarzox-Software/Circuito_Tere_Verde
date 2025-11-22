@@ -30,6 +30,7 @@ export default function CustomCarousel() {
             <div className="p-4 bg-white rounded-xl shadow-md min-h-40">
               <h2 className="text-xl font-bold text-primary">{post.titulo}</h2>
               <p className="text-gray-700 mt-2">{post.descricao}</p>
+              <img src={post.foto} className="w-100 h-100 object-cover rounded-lg mx-auto" />
             </div>
           </CarouselItem>
         ))}

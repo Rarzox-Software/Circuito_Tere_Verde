@@ -1,6 +1,6 @@
 // MockStore.ts
 
-import { Parque, TipoPostagem } from "./Enumerations.ts";
+import { Parque, TipoPostagem } from "./Enumerations";
 import testeImg from "../assets/teste.png";
 
 // ---------------- Tipagens ---------------- //

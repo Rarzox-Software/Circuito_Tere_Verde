@@ -59,10 +59,10 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abaixo estão as imagens das prototipagens em JPEG.
 Foi utilizado o Figma para realizar os protótipos:
 🔗 [Link do Protótipo no Figma](https://www.figma.com/design/yKB8B5gKS5mU48ZLAtF176/MVP-NAFESO?node-id=0-1&t=cQN30EkffjzcaN11-1)
-![Prototipagem 1](./img/PrototipoFigma/Figma%20Login.jpg)
-![Prototipagem 2](./img/PrototipoFigma/Figma%20Agendamento.jpg)
-![Prototipagem 3](./img/PrototipoFigma/Figma%20Feedback.jpg)
-![Prototipagem 4](./img/PrototipoFigma/Figma%20Cadastro.jpg)
+![Prototipagem 1](./prototipo/Teste.png)
+![Prototipagem 2](./prototipo/Teste2.png)
+![Prototipagem 3](./prototipo/Teste3.png)
+![Prototipagem 4](./prototipo/Teste4.png)
 
 ## Lista de Requisitos
 
