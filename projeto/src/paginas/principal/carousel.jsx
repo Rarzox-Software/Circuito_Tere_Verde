@@ -11,19 +11,18 @@ import {
 } from "@/components/ui/carousel"
 
 export default function CustomCarousel() {
-  
+
   const store = MockStore.getInstance(); // acessa dados mocado
   const postagens = store.getUltimasPostagens();  // pega as 5 últimas Postagens
-  
+
   return (
     <Carousel
-      className="w-3/4 min-h-60"
+      className="w-full relative mx-auto overflow-hidden"
       plugins={[
         Autoplay({
           delay: 6000,
         }),
-      ]}
-    >
+      ]}>
       <CarouselContent>
         {postagens.map((post) => (
           <CarouselItem key={post.id}>
@@ -34,9 +33,8 @@ export default function CustomCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-50" />
+      <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-50" />
     </Carousel>
   )
 }
