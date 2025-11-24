@@ -26,7 +26,6 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 
 ## Funcionalidades principais:
 - *Página de Informações sobre Parques*: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
-- *Informações sobre biodiversidade*: Dados básicos sobre fauna e flora das unidades de conservação.
 - *Agenda de eventos*: Calendário com atividades programadas nos parques e áreas de ecoturismo. 
 - *Interface responsiva e intuitiva*: Design simples para acesso via celular e computador.
 
@@ -36,7 +35,6 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 
 ## Público-alvo: 
   - *visitantes*: Turistas e moradores interessados em ecoturismo, trilhas e atividades de montanhismo em Teresópolis.
-  - *Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
 
 ## Dores do público alvo:
 - *Informações dispersas*: Visitantes encontram dificuldade em localizar informações sobre os parques.
