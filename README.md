@@ -26,7 +26,7 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 
 ## Funcionalidades principais:
 - *Página de Informações sobre Parques*: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
-- *Agenda de eventos*: Calendário com atividades programadas nos parques e áreas de ecoturismo. 
+- *Publicação de postagens*: Administradores poderão criar e divulgar diferentes tipos de conteúdo relacionados aos parques, como comunicados, eventos, alertas, curiosidades e atualizações gerais.
 - *Interface responsiva e intuitiva*: Design simples para acesso via celular e computador.
 
 ## Atores Envolvidos:
@@ -48,15 +48,12 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 - *Acesso remoto e conveniente*: Plataforma disponível em múltiplos dispositivos.
 
 
-
-
-
-
 ## Protótipos
 
-Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abaixo estão as imagens das prototipagens em JPEG.
+Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abaixo estão as imagens das prototipagens em JPEG/PNG.
 Foi utilizado o Figma para realizar os protótipos:
-🔗 [Link do Protótipo no Figma]()
+
+🔗 [Link do Protótipo no Figma](colocar aqui o link do figma)
 ![Prototipagem 1](./prototipo/Teste.png)
 ![Prototipagem 2](./prototipo/Teste2.png)
 ![Prototipagem 3](./prototipo/Teste3.png)
