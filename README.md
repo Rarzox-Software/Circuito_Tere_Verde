@@ -1,6 +1,6 @@
 <img width="150" height="150" alt="Logo Circuito TereVerde" src="https://github.com/user-attachments/assets/5fa0c270-1786-4aa0-ba73-5ddf8cc3ecb7" />
 
-# Grupo 10
+# Grupo 2
 Rafael Mendes, Igor Augusto, Nauan Pereira, Ingrid Mendes
 
 # Situação Problema: 
@@ -56,7 +56,7 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 
 Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abaixo estão as imagens das prototipagens em JPEG.
 Foi utilizado o Figma para realizar os protótipos:
-🔗 [Link do Protótipo no Figma](https://www.figma.com/design/yKB8B5gKS5mU48ZLAtF176/MVP-NAFESO?node-id=0-1&t=cQN30EkffjzcaN11-1)
+🔗 [Link do Protótipo no Figma]()
 ![Prototipagem 1](./prototipo/Teste.png)
 ![Prototipagem 2](./prototipo/Teste2.png)
 ![Prototipagem 3](./prototipo/Teste3.png)
