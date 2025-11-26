@@ -76,7 +76,10 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
 
   // ----------------- UI -----------------
   return (
-    <div className="bg-[#f6f3e7] p-6 rounded-xl shadow-md w-[420px]">
+  <div className="bg-[#f6f3e7] rounded-xl shadow-md w-[600px] overflow-hidden">
+    
+    {/* scroll */}
+    <div className="p-6 max-h-[90vh] overflow-y-auto">
 
       <h2 className="text-2xl font-semibold text-[#1E4636] mb-5">
         {postagem ? "Editar Registro" : "Registro"}
@@ -84,7 +87,9 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
 
       <div className="flex flex-col gap-3">
 
-        {/* PARQUE */}
+      {/* PARQUE */}
+      <div className="flex flex-col gap-1">
+        <label className="text-[#1E4636] font-semibold text-sm">Parque</label>
         <select
           className="input"
           value={form.parque}
@@ -94,25 +99,32 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
             <option key={p}>{p}</option>
           ))}
         </select>
+      </div>
 
-        {/* TÍTULO */}
+      {/* TÍTULO */}
+      <div className="flex flex-col gap-1">
+        <label className="text-[#1E4636] font-semibold text-sm">Título</label>
         <input
           type="text"
-          placeholder="Título"
           className="input"
           value={form.titulo}
           onChange={(e) => atualizar("titulo", e.target.value)}
         />
+      </div>
 
-        {/* DESCRIÇÃO */}
+      {/* DESCRIÇÃO */}
+      <div className="flex flex-col gap-1">
+        <label className="text-[#1E4636] font-semibold text-sm">Descrição</label>
         <textarea
-          placeholder="Descrição"
           className="input h-24"
           value={form.descricao}
           onChange={(e) => atualizar("descricao", e.target.value)}
         />
+      </div>
 
-        {/* TIPO */}
+      {/* TIPO */}
+      <div className="flex flex-col gap-1">
+        <label className="text-[#1E4636] font-semibold text-sm">Tipo</label>
         <select
           className="input"
           value={form.tipo}
@@ -122,43 +134,65 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
             <option key={t}>{t}</option>
           ))}
         </select>
-
+      </div>
+      
+      <div className="flex gap-4 w-full">
+        
         {/* DATA INÍCIO */}
-        <input
-          type="date"
-          className="input"
-          value={form.dataInicio}
-          onChange={(e) => atualizar("dataInicio", e.target.value)}
-        />
-
-        {/* DATA FIM */}
-        <input
-          type="date"
-          className="input"
-          value={form.dataFim}
-          onChange={(e) => atualizar("dataFim", e.target.value)}
-        />
-
-        {/* FOTO */}
-        <input
-          type="file"
-          accept="image/*"
-          className="input"
-          onChange={handleFoto}
-        />
-
-        {/* PREVIEW */}
-        {form.foto && (
-          <img
-            src={form.foto}
-            className="w-32 h-32 object-cover rounded-md self-center border"
-            alt="preview"
+        <div className="flex flex-col gap-1 w-1/2">
+          <label className="text-[#1E4636] font-semibold text-sm">Data Início</label>
+          <input
+            type="date"
+            className="input"
+            value={form.dataInicio}
+            onChange={(e) => atualizar("dataInicio", e.target.value)}
           />
-        )}
+        </div>
+
+        {/* DATA FINAL */}
+        <div className="flex flex-col gap-1 w-1/2">
+          <label className="text-[#1E4636] font-semibold text-sm">Data Final</label>
+          <input
+            type="date"
+            className="input"
+            value={form.dataFim}
+            onChange={(e) => atualizar("dataFim", e.target.value)}
+          />
+        </div>
 
       </div>
 
-      <div className="flex justify-between mt-6">
+      <div className="flex flex-col gap-1">
+        <label className="text-[#1E4636] font-semibold text-sm">Foto</label>
+
+        <input
+          id="fotoInput"
+          type="file"
+          accept="image/*"
+          className="hidden"
+          onChange={handleFoto}
+        />
+
+        <button
+          onClick={() => document.getElementById("fotoInput").click()}
+          className="px-4 py-2 bg-secondary text-primary rounded-md font-semibold 
+                    hover:bg-accent transition"
+        >
+          Selecionar Foto
+        </button>
+
+        {form.foto && (
+          <img
+            src={form.foto}
+            className="w-32 h-32 object-cover rounded-md self-center border mt-2"
+            alt="preview"
+          />
+        )}
+      </div>
+
+      </div>
+
+      <div className="flex justify-around mt-6">
         <button
           onClick={onCancel}
           className="font-semibold text-[#94a88a] hover:text-[#6f7f6a]"
@@ -172,6 +206,7 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
         >
           {postagem ? "SALVAR" : "GRAVAR"}
         </button>
+        </div>
       </div>
     </div>
   );
