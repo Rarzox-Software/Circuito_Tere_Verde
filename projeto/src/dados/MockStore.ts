@@ -96,11 +96,13 @@ export class MockStore {
         if (!admin) return false;
 
         this.logado = admin;
+        this.notify();
         return true;
     }
 
     public logout(): void {
         this.logado = null;
+        this.notify();
     }
 
     public estaLogado(): boolean {
@@ -115,7 +117,6 @@ export class MockStore {
     // ---------------- Postagens ---------------- //
 
     public addPostagem(data: Postagem) {
-        // gera id sequencial
         data.id = this.idSequencialPostagens;
         this.idSequencialPostagens++;
 
@@ -136,21 +137,14 @@ export class MockStore {
         return this.postagens.length < tamanhoAntes;
     }
 
-    public getTodasPostagens(): Postagem[] {
-        return this.postagens;
-    }
 
-    public getPostagensPorParque(parque: Parque): Postagem[] {
-        return this.postagens.filter(p => p.parque === parque);
-    }
+    public getPostagensPorParqueETipo(parqueIndex: number, tipoIndex: number): Postagem[] {
+        const parqueEnum = parqueIndex === -1 ? null : Object.values(Parque)[parqueIndex];
+        const tipoEnum   = tipoIndex   === -1 ? null : Object.values(TipoPostagem)[tipoIndex];
 
-    public getPostagensPorTipo(tipo: TipoPostagem): Postagem[] {
-        return this.postagens.filter(p => p.tipo === tipo);
-    }
-
-    public getPostagensPorParqueETipo(parque: Parque, tipo: TipoPostagem): Postagem[] {
-        return this.postagens.filter(
-            p => p.parque === parque && p.tipo === tipo
+        return this.postagens.filter(p =>
+            (parqueEnum === null || p.parque === parqueEnum) &&
+            (tipoEnum === null   || p.tipo === tipoEnum)
         );
     }
 
@@ -172,4 +166,21 @@ export class MockStore {
         return validas.slice(0, 5);
     }
 
+        public getTodasPostagens(): Postagem[] {
+        return this.postagens;
+    }
+
+    // ---------------- notificacao ---------------- //
+    private listeners: (() => void)[] = [];
+
+    public subscribe(callback: () => void) {
+        this.listeners.push(callback);
+    }
+
+    private notify() {
+        this.listeners.forEach(cb => cb());
+    }
+
 }
+
+    

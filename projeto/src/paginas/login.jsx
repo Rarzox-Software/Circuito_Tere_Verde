@@ -28,7 +28,7 @@ export default function Login() {
     setErro("");
 
     // direciona para painel de controle
-    navigate("/painelControle");
+    navigate("/postagens");
   }
 
   return (

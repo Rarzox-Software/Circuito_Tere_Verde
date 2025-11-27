@@ -6,7 +6,7 @@ import { MockStore } from "../../../dados/MockStore.ts";
 
 export default function Listagem() {
   const store = MockStore.getInstance();
-  const [postagens, setPostagens] = useState(store.getTodasPostagens());
+  const [postagens, setPostagens] = useState(store.getPostagensPorParqueETipo(0,-1));
 
   const retornoFiltro = useCallback((lista) => {
     setPostagens(lista);

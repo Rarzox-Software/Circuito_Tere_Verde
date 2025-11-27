@@ -10,7 +10,8 @@ export enum TipoPostagem {
     Biodiversidade = "BIODIVERSIDADE",
     Eventos = "EVENTOS",
     Novidades = "NOVIDADES",
-    Atracoes = "ATRAÇÕES"
+    Atracoes = "ATRAÇÕES",
+    Sobre = "SOBRE"
 }
 
 // Para preencher combobox no front (React/HTML/TS)

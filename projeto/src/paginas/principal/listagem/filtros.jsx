@@ -9,15 +9,18 @@ export default function FiltrosListagem({ retornoFiltro }) {
   const [selected, setSelected] = useState("SOBRE");
 
   const botoes = [
-    "SOBRE",
-    "EVENTOS",
+    "TODOS", 
     "TRILHAS",
     "CACHOEIRAS",
-    "BIODIVERSIDADE"
+    "BIODIVERSIDADE",
+    "EVENTOS",
+    "NOVIDADES",
+    "ATRAÇÕES",
+    "SOBRE"
   ];
 
   useEffect(() => {
-    retornoFiltro(store.getPostagensPorTipo(selected));
+    //retornoFiltro(store.getPostagensPorTipo(selected));
   }, [selected, retornoFiltro, store]);
 
   return (
