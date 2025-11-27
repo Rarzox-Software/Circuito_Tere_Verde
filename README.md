@@ -89,5 +89,14 @@ Você pode visualizar os slides de apresentação do MVP no link abaixo:
 
 ## Melhorias Futuras
 - Integração com um banco de dados para salvar usuários e agendamentos.
-- Painel de controle para colaboradores visualizarem agendamentos.
+- Possibilidade de Cadastrar mais parques e atrações.
 - Feedback visual mais interativo para validações.
+- Agendamento para Camping.
+
+
+
+
+​
+
+
+
