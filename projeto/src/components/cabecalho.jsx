@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.svg?react";
 import { MockStore } from "../dados/MockStore";
+import Container from "./container"
 
 export default function Cabecalho() {
 
@@ -26,30 +27,31 @@ export default function Cabecalho() {
   }
 
   return (
-    <header className="flex justify-between items-center w-full p-4 lg:px-20 bg-primary text-white">
+    <header className="w-full bg-primary">
+      <Container className="flex justify-between items-center py-4  text-white">
+        <Link to="/">
+          <Logo className="cursor-pointer" />
+        </Link>
 
-      <Link to="/">
-        <Logo className="cursor-pointer" />
-      </Link>
+        <div className="flex gap-4 items-center">
 
-      <div className="flex gap-4 items-center">
+          {logado && (
+            <>
+              {/* Só aparece se NÃO estiver na página de postagens */}
+              {!estaNaPaginaPostagens && (
+                <Link to="/postagens">Postagens</Link>
+              )}
 
-        {logado && (
-          <>
-            {/* Só aparece se NÃO estiver na página de postagens */}
-            {!estaNaPaginaPostagens && (
-              <Link to="/postagens">Postagens</Link>
-            )}
+              <button onClick={sair}>Sair</button>
+            </>
+          )}
 
-            <button onClick={sair}>Sair</button>
-          </>
-        )}
+          {!logado && (
+            <Link to="/login">Login</Link>
+          )}
 
-        {!logado && (
-          <Link to="/login">Login</Link>
-        )}
-
-      </div>
+        </div>
+      </Container>
     </header>
   );
 }

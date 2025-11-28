@@ -17,7 +17,7 @@ export default function CustomCarousel() {
 
   return (
     <Carousel
-      className="w-full relative mx-auto overflow-hidden"
+      className="w-full relative overflow-hidden"
       plugins={[
         Autoplay({
           delay: 6000,

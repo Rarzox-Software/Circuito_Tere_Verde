@@ -58,10 +58,10 @@ export class MockStore {
 
         this.postagens.push({
             id: 2,
-            parque: Parque.PNMMT,
+            parque: Parque.PNSO,
             tipo: TipoPostagem.Biodiversidade,
             titulo: "Trilha Suspença 2",
-            descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venham visitar e conhecer a natureza.",
+            descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venham visitar e conhecer a",
             foto: testeImg,
             dataPostagem: new Date()
         });
@@ -140,11 +140,11 @@ export class MockStore {
 
     public getPostagensPorParqueETipo(parqueIndex: number, tipoIndex: number): Postagem[] {
         const parqueEnum = parqueIndex === -1 ? null : Object.values(Parque)[parqueIndex];
-        const tipoEnum   = tipoIndex   === -1 ? null : Object.values(TipoPostagem)[tipoIndex];
+        const tipoEnum = tipoIndex === -1 ? null : Object.values(TipoPostagem)[tipoIndex];
 
         return this.postagens.filter(p =>
             (parqueEnum === null || p.parque === parqueEnum) &&
-            (tipoEnum === null   || p.tipo === tipoEnum)
+            (tipoEnum === null || p.tipo === tipoEnum)
         );
     }
 
@@ -166,7 +166,7 @@ export class MockStore {
         return validas.slice(0, 5);
     }
 
-        public getTodasPostagens(): Postagem[] {
+    public getTodasPostagens(): Postagem[] {
         return this.postagens;
     }
 
@@ -183,4 +183,3 @@ export class MockStore {
 
 }
 
-    
