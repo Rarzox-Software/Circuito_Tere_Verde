@@ -8,9 +8,12 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export default function CardPostagem({ postagem, className }) {
+export default function CardPostagem({ postagem, className, ...props }) {
   return (
-    <Card className={className}>
+    <Card
+      className={className}
+      {...props}
+    >
       <CardHeader>
         <CardTitle>{postagem.titulo}</CardTitle>
         <CardDescription>{postagem.descricao}</CardDescription>

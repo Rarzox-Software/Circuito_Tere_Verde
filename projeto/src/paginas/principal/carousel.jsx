@@ -25,12 +25,28 @@ export default function CustomCarousel() {
       ]}>
       <CarouselContent>
         {postagens.map((post) => (
-          <CarouselItem key={post.id} className="w-full">
-            <div className="p-4 px-8 bg-white rounded-xl shadow-md h-full">
-              <h2 className="text-xl font-bold text-primary">{post.titulo}</h2>
-              <p className="text-gray-700 mt-2">{post.descricao}</p>
-              {/* <img src={post.foto} className="w-1/4" /> */}
+          <CarouselItem key={post.id}>
+           <div className="bg-white rounded-xl shadow-md flex gap-4 items-center px-10 py-5 h-[140px]">
+
+            {/* Imagem à esquerda */}
+            <img 
+              src={post.foto} 
+              className="w-28 h-28 object-cover rounded-lg"
+              alt={post.titulo}
+            />
+
+            {/* Texto à direita */}
+            <div className="flex flex-col">
+              <h2 className="text-xl font-bold text-primary">
+                {post.titulo}
+              </h2>
+
+              <p className="text-gray-700 mt-2">
+                {post.descricao}
+              </p>
             </div>
+
+        </div>
           </CarouselItem>
         ))}
       </CarouselContent>

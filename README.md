@@ -69,7 +69,7 @@ Os requisitos funcionais e não funcionais deste projeto estão organizados em u
 ## Slide de Apresentação
 Você pode visualizar os slides de apresentação do MVP no link abaixo:
 
-[Slides de Apresentação](https://www.canva.com/design/DAGXtLTsC7k/txwI1K0oxourXjUhXYE9LA/edit?utm_content=DAGXtLTsC7k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Slides de Apresentação](https://gtiunifeso-my.sharepoint.com/:p:/g/personal/nauanlima_unifeso_com_vc/IQBJe6kAHZOgTawivyfIlXn0AfEWFrAa0uvdk4LgmooNpIY?e=fCOpgB)
 
 ## Tecnologias Utilizadas
 
@@ -89,5 +89,14 @@ Você pode visualizar os slides de apresentação do MVP no link abaixo:
 
 ## Melhorias Futuras
 - Integração com um banco de dados para salvar usuários e agendamentos.
-- Painel de controle para colaboradores visualizarem agendamentos.
+- Possibilidade de Cadastrar mais parques e atrações.
 - Feedback visual mais interativo para validações.
+- Agendamento para Camping.
+
+
+
+
+​
+
+
+
