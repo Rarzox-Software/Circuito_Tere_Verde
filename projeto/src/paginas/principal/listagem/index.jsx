@@ -13,11 +13,13 @@ export default function Listagem() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-2">
+    <>
       <FiltrosListagem retornoFiltro={retornoFiltro} />
-      {postagens.map((post) => (
-        <CardPostagem key={post.id} postagem={post} />
-      ))}
-    </div>
+      <div className="flex flex-col gap-2 w-full">
+        {postagens.map((post) => (
+          <CardPostagem key={post.id} postagem={post} />
+        ))}
+      </div>
+    </>
   )
 }

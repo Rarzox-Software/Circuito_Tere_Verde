@@ -61,7 +61,7 @@ export class MockStore {
             parque: Parque.PNMMT,
             tipo: TipoPostagem.Biodiversidade,
             titulo: "Trilha Suspença 2",
-            descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venham visitar e conhecer a natureza.",
+            descricao: "Temos uma boa notícia para vocês, a Trinlha suspença tão amada por todos está LIBERADA! Venham visitar e conhecer a",
             foto: testeImg,
             dataPostagem: new Date()
         });

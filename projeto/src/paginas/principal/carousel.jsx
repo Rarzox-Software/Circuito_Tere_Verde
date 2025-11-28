@@ -17,7 +17,7 @@ export default function CustomCarousel() {
 
   return (
     <Carousel
-      className="w-full relative mx-auto overflow-hidden"
+      className="w-full relative overflow-hidden"
       plugins={[
         Autoplay({
           delay: 6000,
@@ -25,11 +25,11 @@ export default function CustomCarousel() {
       ]}>
       <CarouselContent>
         {postagens.map((post) => (
-          <CarouselItem key={post.id}>
-            <div className="p-4 bg-white rounded-xl shadow-md min-h-40">
+          <CarouselItem key={post.id} className="w-full">
+            <div className="p-4 px-8 bg-white rounded-xl shadow-md h-full">
               <h2 className="text-xl font-bold text-primary">{post.titulo}</h2>
               <p className="text-gray-700 mt-2">{post.descricao}</p>
-              <img src={post.foto} className="w-100 h-100 object-cover rounded-lg mx-auto" />
+              {/* <img src={post.foto} className="w-1/4" /> */}
             </div>
           </CarouselItem>
         ))}
