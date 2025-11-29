@@ -1,7 +1,7 @@
 export enum Parque {
     PNSO = "Parque Nacional da Serra dos Órgãos",
-    PETP = "Parque Estadual dos Três Picos",
-    PNMMT = "Parque Natural Municipal Montanhas de Teresópolis"
+    PNMMT = "Parque Natural Municipal Montanhas de Teresópolis",
+    PETP = "Parque Estadual dos Três Picos"
 }
 
 export enum TipoPostagem {
