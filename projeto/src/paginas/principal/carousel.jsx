@@ -41,7 +41,7 @@ export default function CustomCarousel() {
                 {post.titulo}
               </h2>
 
-              <p className="text-gray-700 mt-2">
+              <p className="text-gray-700 mt-2 line-clamp-3">
                 {post.descricao}
               </p>
             </div>
