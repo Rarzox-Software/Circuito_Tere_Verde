@@ -54,10 +54,10 @@ Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abai
 Foi utilizado o Figma para realizar os protótipos:
 
 🔗 [Link do Protótipo no Figma](colocar aqui o link do figma)
-![Prototipagem 1](./prototipo/Teste.png)
-![Prototipagem 2](./prototipo/Teste2.png)
-![Prototipagem 3](./prototipo/Teste3.png)
-![Prototipagem 4](./prototipo/Teste4.png)
+![Prototipagem 1](./prototipo/Principal.png)
+![Prototipagem 2](./prototipo/Login.png)
+![Prototipagem 3](./prototipo/Painel.png)
+![Prototipagem 4](./prototipo/Registro.png)
 
 ## Lista de Requisitos
 
