@@ -21,7 +21,6 @@ export interface Postagem {
     titulo: string;
     descricao: string;
     foto: string;
-    dataPostagem: Date;
     dataInicio?: Date;
     dataFim?: Date;
 }
@@ -91,13 +90,13 @@ export class MockStore {
 
 
         this.postagens.push({
-            id: 1,
+            id: 2,
             parque: Parque.PETP,
             tipo: TipoPostagem.Sobre,
             titulo: "Parque Estadual dos Três Picos",
             descricao: dadosDescricao,
             foto: petpImg,
-            dataPostagem: new Date()
+            dataInicio: new Date()
         });
 
         // Parque Natural Municipal Montanhas de Teresópoliss
@@ -138,13 +137,13 @@ export class MockStore {
         + "mais marcantes de Teresópolis.\n"
 
         this.postagens.push({
-            id: 2,
+            id: 3,
             parque: Parque.PNMMT,
             tipo: TipoPostagem.Sobre,
             titulo: "Parque Natural Municipal Montanhas de Teresópolis",
             descricao: dadosDescricao,
             foto: pnmmtImg,
-            dataPostagem: new Date()
+            dataInicio: new Date()
         });
 
         // Parque Nacional da Serra dos Órgãos
@@ -190,13 +189,13 @@ export class MockStore {
         + "um dos lugares mais inesquecíveis do Brasil.\n"
 
         this.postagens.push({
-            id: 2,
+            id: 4,
             parque: Parque.PNSO,
             tipo: TipoPostagem.Sobre,
             titulo: "Parque Nacional da Serra dos Órgãos",
             descricao: dadosDescricao,
             foto: pnsoImg,
-            dataPostagem: new Date()
+            dataInicio: new Date()
         });
 
         // trilha
@@ -211,13 +210,13 @@ export class MockStore {
         + "Um passeio inesquecível pelos cenários mais marcantes da Serra dos Órgãos.\n";
 
         this.postagens.push({
-            id: 2,
+            id: 5,
             parque: Parque.PNSO,
             tipo: TipoPostagem.Trilhas,
             titulo: "Trilha Mozart Catão",
             descricao: dadosDescricao,
             foto: trilhaMozartCartao,
-            dataPostagem: new Date()
+            dataInicio: new Date()
         });
     }
 

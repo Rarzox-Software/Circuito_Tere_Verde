@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MockStore } from "../../dados/MockStore.ts";
-import { Parque, TipoPostagem } from "../../dados/Enumerations.ts";
+import { getParque, getTipo } from "../../dados/Enumerations.ts"
 import PostagemForm from "./cadastroPostagem.jsx";
 
 
@@ -19,25 +19,7 @@ export default function Painel() {
     setPostagens(store.getTodasPostagens());
   }, []);
 
-  function textoParque(p) {
-    switch (p) {
-      case Parque.PNSO: return "Parque Nacional da Serra dos Órgãos";
-      case Parque.PETP: return "Parque Estadual dos Três Picos";
-      case Parque.PNMMT: return "Parque Municipal Montanhas de Teresópolis";
-      default: return "—";
-    }
-  }
 
-  function textoTipo(t) {
-    switch (t) {
-      case TipoPostagem.Trilhas: return "Trilhas";
-      case TipoPostagem.Cachoeiras: return "Cachoeiras";
-      case TipoPostagem.Biodiversidade: return "Biodiversidade";
-      case TipoPostagem.Eventos: return "Eventos";
-      case TipoPostagem.Novidades: return "Novidades";
-      default: return "—";
-    }
-  }
 
   // funcoes botoes
   // novo cadastro
@@ -99,11 +81,11 @@ export default function Painel() {
                   }`}
                   onClick={() => selecionarLinha(p)}
                 >
-                  <td className="td">{textoParque(p.parque)}</td>
+                  <td className="td">{getParque(p.parque)}</td>
                   <td className="td">{p.titulo}</td>
-                  <td className="td">{textoTipo(p.tipo)}</td>
+                  <td className="td">{getTipo(p.tipo)}</td>
                   <td className="td">
-                    {new Date(p.dataPostagem).toLocaleDateString("pt-BR")}
+                    {new Date(p.dataInicio).toLocaleDateString("pt-BR")}
                   </td>
                 </tr>
               ))}

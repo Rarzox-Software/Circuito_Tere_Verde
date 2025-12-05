@@ -29,7 +29,7 @@ export default function CardPostagem({ postagem, className, ...props }) {
         </CardTitle>
 
         <CardContent>
-          <img src={postagem.foto} className="max-w-2xs"></img>
+          <img src={postagem.foto} className="w-full h-100 object-cover rounded-xl"/>
         </CardContent>
 
         <CardDescription>
@@ -41,7 +41,7 @@ export default function CardPostagem({ postagem, className, ...props }) {
       </CardHeader>
 
       <CardFooter>
-        <p>{postagem.dataPostagem.toLocaleString('pt-BR', { timezone: 'UTC' })}</p>
+        <p>{postagem.dataInicio.toLocaleString('pt-BR', { timezone: 'UTC' })}</p>
       </CardFooter>
       
     </Card>

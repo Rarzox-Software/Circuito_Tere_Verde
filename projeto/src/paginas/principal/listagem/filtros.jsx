@@ -37,7 +37,7 @@ export default function FiltrosListagem({ retornoFiltro }) {
 
   return (
     <>
-      <div className="w-full md:w-3/5 flex justify-center gap-2">
+      <div className="w-full md:w-1/2 flex justify-center gap-10">
         {parques.map(({ label, logo }, index) => (
           <BotaoParque
             key={index}

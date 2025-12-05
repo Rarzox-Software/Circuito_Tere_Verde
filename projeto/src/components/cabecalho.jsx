@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.svg?react";
 import { MockStore } from "../dados/MockStore";
-import Container from "./container"
+import Container from "./container";
 
 export default function Cabecalho() {
 
@@ -26,18 +26,29 @@ export default function Cabecalho() {
     navigate("/");
   }
 
+  //Retorna título conforme rota
+  function obterTitulo() {
+    if (location.pathname === "/postagens") return "Postagens";
+    return "Circuito Terê Verde";
+  }
+
   return (
     <header className="w-full bg-primary">
-      <Container className="flex justify-between items-center py-4  text-white">
+      <Container className="flex justify-between items-center py-4 text-white">
+
         <Link to="/">
           <Logo className="cursor-pointer" />
         </Link>
+
+        {/*TÍTULO DINÂMICO */}
+        <h1 className="text-xl font-semibold">
+          {obterTitulo()}
+        </h1>
 
         <div className="flex gap-4 items-center">
 
           {logado && (
             <>
-              {/* Só aparece se NÃO estiver na página de postagens */}
               {!estaNaPaginaPostagens && (
                 <Link to="/postagens">Postagens</Link>
               )}
@@ -51,6 +62,7 @@ export default function Cabecalho() {
           )}
 
         </div>
+
       </Container>
     </header>
   );

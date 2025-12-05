@@ -82,7 +82,7 @@ export default function PostagemForm({ postagem, onCancel, onSaved }) {
     <div className="p-6 max-h-[90vh] overflow-y-auto">
 
       <h2 className="text-2xl font-semibold text-[#1E4636] mb-5">
-        {postagem ? "Editar Registro" : "Registro"}
+        {postagem ? "Editar Postagem" : "Incluir Postagem"}
       </h2>
 
       <div className="flex flex-col gap-3">
