@@ -53,7 +53,7 @@ O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funci
 Para entender melhor a interface do sistema, fizemos algumas prototipagens. Abaixo estão as imagens das prototipagens em JPEG/PNG.
 Foi utilizado o Figma para realizar os protótipos:
 
-🔗 [Link do Protótipo no Figma](colocar aqui o link do figma)
+🔗 [Link do Protótipo no Figma](https://www.figma.com/design/8h9bIUN2wJT7pQEnlBlgL0/Circuito-Tere-Verde?node-id=0-1&t=ZuovEVVD7DJLBvDC-1)
 ![Prototipagem 1](./prototipo/Principal.png)
 ![Prototipagem 2](./prototipo/Login.png)
 ![Prototipagem 3](./prototipo/Painel.png)
@@ -73,30 +73,38 @@ Você pode visualizar os slides de apresentação do MVP no link abaixo:
 
 ## Tecnologias Utilizadas
 
-- **HTML5**: Estruturação do conteúdo do site.
-- **CSS3**: Estilização da interface do usuário com foco em responsividade e usabilidade.
-- **JavaScript Vanilla**: Implementação de interatividade nas páginas.
+- **Vite** — Utilizado como bundler e servidor de desenvolvimento para garantir builds rápidas e um ambiente leve durante o desenvolvimento.
+- **React** — Utilizado para estruturar toda a interface do site por meio de componentes funcionais.
+- **Tailwind CSS** — Usado para estilizar o projeto com classes utilitárias, mantendo o layout rápido de ajustar e responsivo.
+- **Lucide React** — Utilizado para inserir ícones leves e consistentes em diferentes partes da interface.
+- **Embla Carousel** — Implementado para criar o carrossel de forma simples, fluida e totalmente integrada aos componentes do React.
 
 ## Instalação e Uso
 
-1. Clone o repositório:
+1. Baixe e instale a versão LTS do Node.js em: https://nodejs.org/
+ 
+2. Clone o repositório:
    ```bash
-   git clone https://github.com/AmandaLisboa-Ramos/Agendamento_NAFESO.git
+   git clone https://github.com/Rarzox-Software/Circuito_Tere_Verde.git
 
-2. Abra o arquivo index.html no navegador para acessar a página de login.
-3. Clique no link para ir para a página de cadastro.
-4. Preencha os campos e conclua o cadastro para ser redirecionado ao login.
+3. Acesse a pasta do Projeto
+   ```bash
+   npm install 
+
+4. Rodar em modo de desenvolvimento
+    ```bash
+    npm run dev
+
+5. Para rodar em produção, deverá utilizar o comando
+    ```bash
+    npm run build
+    
+6. O comando vai gerar uma pasta "dist" e para visualizar, deverá utilizar o comando
+    ```bash
+    npm run preview
 
 ## Melhorias Futuras
 - Integração com um banco de dados para salvar usuários e agendamentos.
 - Possibilidade de Cadastrar mais parques e atrações.
 - Feedback visual mais interativo para validações.
 - Agendamento para Camping.
-
-
-
-
-​
-
-
-
