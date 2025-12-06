@@ -4,6 +4,8 @@ import petpImg from "../assets/petp_sobre.jpg";
 import pnmmtImg from "../assets/pnmmt_sobre.jpg";
 import pnsoImg from "../assets/pnso_sobre.jpg";
 import trilhaMozartCartao from "../assets/trilha_mozart_cartao.jpg";
+import pedraTartaruga from "../assets/pedra_tartaruga.jpg";
+import cachoeiraFrades from "../assets/cachoeira_frades.png";
 
 // ---------------- Tipagens ---------------- //
 
@@ -21,7 +23,8 @@ export interface Postagem {
     titulo: string;
     descricao: string;
     foto: string;
-    dataInicio?: Date;
+    dataPublicacao: Date;
+    dataInicio: Date;
     dataFim?: Date;
 }
 
@@ -35,7 +38,7 @@ export class MockStore {
     private logado: Admin | null = null;
     private postagens: Postagem[] = [];
 
-    private idSequencialPostagens: number = 3;
+    private idSequencialPostagens: number = 8;
     private idSequencialAdmin: number = 2;
 
     private constructor() {
@@ -96,6 +99,31 @@ export class MockStore {
             titulo: "Parque Estadual dos Três Picos",
             descricao: dadosDescricao,
             foto: petpImg,
+            dataPublicacao: new Date(),
+            dataInicio: new Date()
+        });
+
+        // cachoeira
+        dadosDescricao = 
+          "A Cachoeira dos Frades é um dos refúgios naturais mais encantadores da região, famosa por suas águas cristalinas e ambiente tranquilo.\n"
+        + "Localizada em um vale cercado por montanhas, oferece poços naturais perfeitos para um banho refrescante.\n"
+        + "\n"
+        + "Atividades Recomendadas:\n"
+        + "- Banho nos poços de água pura e gelada.\n"
+        + "- Trilhas leves pelo entorno, com belas paisagens rurais.\n"
+        + "- Piquenique e momentos de descanso à beira da água.\n"
+        + "- Fotografia da natureza e das quedas d'água.\n"
+        + "\n"
+        + "Um destino ideal para quem busca relaxamento, contato com a natureza e um passeio acessível e revigorante."
+
+        this.postagens.push({
+            id: 3,
+            parque: Parque.PETP,
+            tipo: TipoPostagem.Cachoeiras,
+            titulo: "Cachoeira dos Frades",
+            descricao: dadosDescricao,
+            foto: cachoeiraFrades,
+            dataPublicacao: new Date(),
             dataInicio: new Date()
         });
 
@@ -137,12 +165,37 @@ export class MockStore {
         + "mais marcantes de Teresópolis.\n"
 
         this.postagens.push({
-            id: 3,
+            id: 4,
             parque: Parque.PNMMT,
             tipo: TipoPostagem.Sobre,
             titulo: "Parque Natural Municipal Montanhas de Teresópolis",
             descricao: dadosDescricao,
             foto: pnmmtImg,
+            dataPublicacao: new Date(),
+            dataInicio: new Date()
+        });
+
+        // trilhas
+        dadosDescricao =  
+        "Pedra da Tartaruga\n"
+        + "A Pedra da Tartaruga é uma das atrações mais famosas e acessíveis da região.\n"
+        + "Com formação rochosa singular, oferece um dos melhores mirantes para apreciar o pôr do sol em Teresópolis.\n"
+        + "\n"
+        + "Atividades Recomendadas:\n"
+        + "- Trilhas leves a moderadas até o topo.\n"
+        + "- Rapel e escalada esportiva, muito buscados por aventureiros.\n"
+        + "- Fotografia e contemplação da vista panorâmica das montanhas.\n"
+        + "\n"
+        + "O local é ideal para quem deseja natureza, aventura e um visual inesquecível."
+
+        this.postagens.push({
+            id: 5,
+            parque: Parque.PNMMT,
+            tipo: TipoPostagem.Trilhas,
+            titulo: "Pedra da Tartaruga",
+            descricao: dadosDescricao,
+            foto: pedraTartaruga,
+            dataPublicacao: new Date(),
             dataInicio: new Date()
         });
 
@@ -189,12 +242,13 @@ export class MockStore {
         + "um dos lugares mais inesquecíveis do Brasil.\n"
 
         this.postagens.push({
-            id: 4,
+            id: 6,
             parque: Parque.PNSO,
             tipo: TipoPostagem.Sobre,
             titulo: "Parque Nacional da Serra dos Órgãos",
             descricao: dadosDescricao,
             foto: pnsoImg,
+            dataPublicacao: new Date(),
             dataInicio: new Date()
         });
 
@@ -210,12 +264,13 @@ export class MockStore {
         + "Um passeio inesquecível pelos cenários mais marcantes da Serra dos Órgãos.\n";
 
         this.postagens.push({
-            id: 5,
+            id: 7,
             parque: Parque.PNSO,
             tipo: TipoPostagem.Trilhas,
             titulo: "Trilha Mozart Catão",
             descricao: dadosDescricao,
             foto: trilhaMozartCartao,
+            dataPublicacao: new Date(),
             dataInicio: new Date()
         });
     }
@@ -270,8 +325,9 @@ export class MockStore {
     // ---------------- Postagens ---------------- //
 
     public addPostagem(data: Postagem) {
-        data.id = this.idSequencialPostagens;
         this.idSequencialPostagens++;
+        data.id = this.idSequencialPostagens;
+        data.dataPublicacao = new Date();
 
         this.postagens.push(data);
     }
@@ -311,7 +367,7 @@ export class MockStore {
 
         // Ordena da postagem mais recente para a mais antiga
         validas.sort((a, b) => {
-            return b.dataPostagem.getTime() - a.dataPostagem.getTime();
+            return b.dataInicio.getTime() - a.dataInicio.getTime();
         });
 
         // Retorna apenas as 5 últimas

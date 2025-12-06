@@ -40,7 +40,6 @@ export default function Cabecalho() {
           <Logo className="cursor-pointer" />
         </Link>
 
-        {/*TÍTULO DINÂMICO */}
         <h1 className="text-xl font-semibold">
           {obterTitulo()}
         </h1>
@@ -50,7 +49,7 @@ export default function Cabecalho() {
           {logado && (
             <>
               {!estaNaPaginaPostagens && (
-                <Link to="/postagens">Postagens</Link>
+                <Link to="/postagens">Publicações</Link>
               )}
 
               <button onClick={sair}>Sair</button>

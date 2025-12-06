@@ -46,7 +46,7 @@ export default function Painel() {
 
         {/* Título e botões */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-[#1E4636]">Registros</h2>
+          <h2 className="text-2xl font-semibold text-[#1E4636]"></h2>
 
           <div className="flex gap-3">
             <button className="btn-acao bg-[#2E5A47] hover:bg-[#244c3c]" onClick={novoRegistro}>
@@ -85,7 +85,7 @@ export default function Painel() {
                   <td className="td">{p.titulo}</td>
                   <td className="td">{getTipo(p.tipo)}</td>
                   <td className="td">
-                    {new Date(p.dataInicio).toLocaleDateString("pt-BR")}
+                    {new Date(p.dataPublicacao).toLocaleDateString("pt-BR")}
                   </td>
                 </tr>
               ))}
