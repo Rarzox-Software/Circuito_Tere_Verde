@@ -26,7 +26,7 @@ export default function CustomCarousel() {
       <CarouselContent>
         {postagens.map((post) => (
           <CarouselItem key={post.id}>
-           <div className="bg-white rounded-xl shadow-md flex gap-4 items-center px-10 py-5 h-[140px]">
+           <div className="bg-white rounded-xl shadow-md flex gap-4 items-center px-8 py-4 h-[160px]">
 
             {/* Imagem à esquerda */}
             <img 
@@ -45,7 +45,7 @@ export default function CustomCarousel() {
                 {post.parque}
               </h2>
 
-              <p className="text-gray-700 mt-1 line-clamp-3">
+              <p className="text-gray-700 mt-1 text-sm leading-tight line-clamp-3 overflow-hidden">
                 {post.descricao}
               </p>
             </div>

@@ -41,7 +41,7 @@ export default function CardPostagem({ postagem, className, ...props }) {
       </CardHeader>
 
       <CardFooter>
-        <p> Data da Publicação {postagem.dataInicio.toLocaleString('pt-BR', { timezone: 'UTC' })}</p>
+        <p> Data da Publicação {postagem.dataPublicacao.toLocaleString('pt-BR', { timezone: 'UTC' })}</p>
       </CardFooter>
       
     </Card>
