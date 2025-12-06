@@ -25,13 +25,13 @@ Desenvolver uma solução digital que centralize informações sobre as unidades
 O MVP do Circuito Terê Verde consiste em uma plataforma digital mínima e funcional que centraliza informações essenciais sobre as atrações naturais de Teresópolis, focando nas trilhas, cachoeiras e biodiversidade das unidades de conservação. Seu objetivo é orientar turistas e moradores locais de forma prática e consciente, oferecendo dados atualizados em uma interface moderna e de fácil acesso.
 
 ## Funcionalidades principais:
-- *Página de Informações sobre Parques*: Apresenta dados sobre trilhas, cachoeiras e mirantes, com descrição, nível de dificuldade e localização.
-- *Publicação de postagens*: Administradores poderão criar e divulgar diferentes tipos de conteúdo relacionados aos parques, como comunicados, eventos, alertas, curiosidades e atualizações gerais.
+- *Página de Informações sobre Parques*: Apresenta dados sobre trilhas, cachoeiras, biodivercidade, eventos, novidades e atrações. Tudo em um só lugar facilitando a busca.
+- *Publicação de postagens*: Administradores poderão criar e divulgar diferentes tipos de conteúdo relacionados aos parques.
 - *Interface responsiva e intuitiva*: Design simples para acesso via celular e computador.
 
 ## Atores Envolvidos:
 - *Visitantes*: Turistas e moradores que buscam informações sobre trilhas, biodiversidade e eventos.
-- *Administradores*: Responsáveis por manter o site atualizado com informações relevantes, gerenciar eventos e horários.
+- *Administradores*: Responsáveis por manter o site atualizado.
 
 ## Público-alvo: 
   - *visitantes*: Turistas e moradores interessados em ecoturismo, trilhas e atividades de montanhismo em Teresópolis.
@@ -63,8 +63,8 @@ Foi utilizado o Figma para realizar os protótipos:
 
 Os requisitos funcionais e não funcionais deste projeto estão organizados em uma planilha para facilitar a visualização e o gerenciamento.
 
-🔗 [Clique aqui para acessar a planilha de requisitos](https://1drv.ms/x/c/57e91941cd9f4c4d/ER5rfYJ-qeBMkZbAIXktG5wBGyLpKWfJWeINBXV--fLdiA?e=8gGG2m&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0)
-- [Baixar Planilha](./img/Planilha%20de%20Requisitos.pdf)
+🔗 [Clique aqui para acessar a planilha de requisitos](https://docs.google.com/spreadsheets/d/17M4lhHh-zplAb1LycOdzhCNI1cL9nvuHoTDNzm8jUvw/edit?usp=sharing)
+- [Baixar Planilha](https://raw.githubusercontent.com/Rarzox-Software/Circuito_Tere_Verde/main/requisitos/Circuito%20Tere%20Verde%20Requisitos.xlsx)
 
 ## Slide de Apresentação
 Você pode visualizar os slides de apresentação do MVP no link abaixo:
