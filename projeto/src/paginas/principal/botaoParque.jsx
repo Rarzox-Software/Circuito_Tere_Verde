@@ -26,7 +26,7 @@ export default function BotaoParque({ logo, label, selecionado, ...props }) {
       <div
         className={`
       mt-2
-      h-2 w-2/4 rounded-full transition-all duration-200
+      h-2 w-2/3 rounded-full transition-all duration-200
       ${selecionado ? "bg-primary opacity-100" : "opacity-0"}
     `}
       />

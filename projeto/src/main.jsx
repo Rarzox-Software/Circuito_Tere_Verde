@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Rotas from './rotas.jsx'
 import Cabecalho from './components/cabecalho.jsx'
+import BotaoTopo from './components/ui/botaoTopo.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Cabecalho />
       <Rotas />
+      <BotaoTopo />
     </BrowserRouter>
   </StrictMode>,
 )
