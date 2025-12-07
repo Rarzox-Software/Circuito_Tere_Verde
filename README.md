@@ -64,7 +64,8 @@ Foi utilizado o Figma para realizar os protótipos:
 Os requisitos funcionais e não funcionais deste projeto estão organizados em uma planilha para facilitar a visualização e o gerenciamento.
 
 🔗 [Clique aqui para acessar a planilha de requisitos](https://docs.google.com/spreadsheets/d/17M4lhHh-zplAb1LycOdzhCNI1cL9nvuHoTDNzm8jUvw/edit?usp=sharing)
-- [Baixar Planilha](https://raw.githubusercontent.com/Rarzox-Software/Circuito_Tere_Verde/main/requisitos/Circuito%20Tere%20Verde%20Requisitos.xlsx)
+- [Baixar Planilha](https://raw.githubusercontent.com/Rarzox-Software/Circuito_Tere_Verde/main/requisitos/Requisitos%20-%20Circuito%20Tere%20Verde.xlsx)
+
 
 ## Slide de Apresentação
 Você pode visualizar os slides de apresentação do MVP no link abaixo:
